@@ -1,0 +1,284 @@
+2017/10/18 12:49:11 - DEBUG -  [main.py:78 - main() ] -  [*] Waiting for messages. To exit press CTRL+C
+2017/10/18 12:58:49 - DEBUG -  [main.py:78 - main() ] -  [*] Waiting for messages. To exit press CTRL+C
+2017/10/18 13:02:54 - DEBUG -  [main.py:79 - main() ] -  [*] Waiting for messages. To exit press CTRL+C
+2017/10/18 13:02:54 - DEBUG -  [main.py:34 - callback() ] - b'{"settings": {"searcher": "https://yandex.ru", "search_q": ["Who are you, Joe Black"], "count": 1}, "redisPort": 6379, "redisHost": "192.168.20.84", "mongoCollectionName": "Snippets", "redisPassword": null, "mongoDataBaseName": "YandexData", "mongoServerName": "mongodb://localhost:27017", "ID": "59e7267a11309800c808a01f"}'
+2017/10/18 13:03:38 - DEBUG -  [main.py:79 - main() ] -  [*] Waiting for messages. To exit press CTRL+C
+2017/10/18 13:03:38 - DEBUG -  [main.py:34 - callback() ] - b'{"settings": {"searcher": "https://yandex.ru", "search_q": ["Who are you, Joe Black"], "count": 1}, "redisPort": 6379, "redisHost": "192.168.20.84", "mongoCollectionName": "Snippets", "redisPassword": null, "mongoDataBaseName": "YandexData", "mongoServerName": "mongodb://localhost:27017", "ID": "59e7267a11309800c808a01f"}'
+2017/10/18 13:03:38 - DEBUG -  [main.py:37 - callback() ] -  [x] Received task(mongoDataBaseName='YandexData', redisPassword=None, mongoCollectionName='Snippets', ID='59e7267a11309800c808a01f', redisPort=6379, redisHost='192.168.20.84', mongoServerName='mongodb://localhost:27017', settings=task(count=1, search_q=['Who are you, Joe Black'], searcher='https://yandex.ru')) from social
+2017/10/18 13:03:38 - DEBUG -  [main.py:52 - callback() ] - b'2'
+2017/10/18 13:03:38 - DEBUG -  [main.py:56 - callback() ] - task(mongoDataBaseName='YandexData', redisPassword=None, mongoCollectionName='Snippets', ID='59e7267a11309800c808a01f', redisPort=6379, redisHost='192.168.20.84', mongoServerName='mongodb://localhost:27017', settings=task(count=1, search_q=['Who are you, Joe Black'], searcher='https://yandex.ru'))
+2017/10/18 13:03:38 - DEBUG -  [main.py:67 - callback() ] - start processing
+2017/10/18 13:03:38 - DEBUG -  [proccessing.py:54 - create_query() ] - {'text': 'Who are you, Joe Black'}
+2017/10/18 13:03:38 - DEBUG -  [proccessing.py:55 - create_query() ] - urlencode() got an unexpected keyword argument 'quote_via'
+2017/10/18 13:03:38 - DEBUG -  [proccessing.py:64 - create_records() ] - {'ID': '59e7267a11309800c808a01f'}
+2017/10/18 13:03:38 - DEBUG -  [proccessing.py:68 - create_records() ] - mongodb://localhost:27017/YandexData
+2017/10/18 13:03:38 - DEBUG -  [main.py:70 - callback() ] - end processing
+2017/10/18 13:18:27 - DEBUG -  [main.py:79 - main() ] -  [*] Waiting for messages. To exit press CTRL+C
+2017/10/18 13:18:27 - DEBUG -  [main.py:34 - callback() ] - b'{"ID": "59e72a5711309800d074ad59", "redisPort": 6379, "mongoDataBaseName": "YandexData", "redisPassword": null, "mongoCollectionName": "Snippets", "redisHost": "192.168.20.84", "settings": {"count": 1, "searcher": "https://yandex.ru", "search_q": ["Who are you, Joe Black"]}, "mongoServerName": "mongodb://192.168.20.84:27017"}'
+2017/10/18 13:18:27 - DEBUG -  [main.py:37 - callback() ] -  [x] Received task(mongoServerName='mongodb://192.168.20.84:27017', ID='59e72a5711309800d074ad59', mongoCollectionName='Snippets', mongoDataBaseName='YandexData', redisPort=6379, redisPassword=None, redisHost='192.168.20.84', settings=task(searcher='https://yandex.ru', count=1, search_q=['Who are you, Joe Black'])) from social
+2017/10/18 13:18:27 - DEBUG -  [main.py:52 - callback() ] - b'2'
+2017/10/18 13:18:27 - DEBUG -  [main.py:56 - callback() ] - task(mongoServerName='mongodb://192.168.20.84:27017', ID='59e72a5711309800d074ad59', mongoCollectionName='Snippets', mongoDataBaseName='YandexData', redisPort=6379, redisPassword=None, redisHost='192.168.20.84', settings=task(searcher='https://yandex.ru', count=1, search_q=['Who are you, Joe Black']))
+2017/10/18 13:18:27 - DEBUG -  [main.py:67 - callback() ] - start processing
+2017/10/18 13:18:27 - DEBUG -  [proccessing.py:54 - create_query() ] - {'text': 'Who are you, Joe Black'}
+2017/10/18 13:18:27 - DEBUG -  [proccessing.py:55 - create_query() ] - urlencode() got an unexpected keyword argument 'quote_via'
+2017/10/18 13:18:27 - DEBUG -  [proccessing.py:64 - create_records() ] - {'ID': '59e72a5711309800d074ad59'}
+2017/10/18 13:18:27 - DEBUG -  [proccessing.py:68 - create_records() ] - mongodb://192.168.20.84:27017/YandexData
+2017/10/18 13:18:27 - DEBUG -  [main.py:70 - callback() ] - end processing
+2017/10/18 13:19:46 - DEBUG -  [main.py:79 - main() ] -  [*] Waiting for messages. To exit press CTRL+C
+2017/10/18 13:19:53 - DEBUG -  [main.py:34 - callback() ] - b'{"ID": "59e72ac911309800d074ad5a", "redisPort": 6379, "mongoDataBaseName": "YandexData", "redisPassword": null, "mongoCollectionName": "Snippets", "redisHost": "192.168.20.84", "settings": {"count": 1, "searcher": "https://yandex.ru", "search_q": ["Who are you, Joe Black"]}, "mongoServerName": "mongodb://192.168.20.84:27017"}'
+2017/10/18 13:19:53 - DEBUG -  [main.py:37 - callback() ] -  [x] Received task(ID='59e72ac911309800d074ad5a', mongoDataBaseName='YandexData', redisPassword=None, mongoCollectionName='Snippets', redisPort=6379, redisHost='192.168.20.84', settings=task(search_q=['Who are you, Joe Black'], searcher='https://yandex.ru', count=1), mongoServerName='mongodb://192.168.20.84:27017') from social
+2017/10/18 13:19:53 - DEBUG -  [main.py:52 - callback() ] - b'2'
+2017/10/18 13:19:53 - DEBUG -  [main.py:56 - callback() ] - task(ID='59e72ac911309800d074ad5a', mongoDataBaseName='YandexData', redisPassword=None, mongoCollectionName='Snippets', redisPort=6379, redisHost='192.168.20.84', settings=task(search_q=['Who are you, Joe Black'], searcher='https://yandex.ru', count=1), mongoServerName='mongodb://192.168.20.84:27017')
+2017/10/18 13:19:53 - DEBUG -  [main.py:67 - callback() ] - start processing
+2017/10/18 13:19:53 - DEBUG -  [proccessing.py:54 - create_query() ] - {'text': 'Who are you, Joe Black'}
+2017/10/18 13:19:53 - DEBUG -  [proccessing.py:55 - create_query() ] - urlencode() got an unexpected keyword argument 'quote_via'
+2017/10/18 13:19:53 - DEBUG -  [proccessing.py:64 - create_records() ] - {'ID': '59e72ac911309800d074ad5a'}
+2017/10/18 13:19:53 - DEBUG -  [proccessing.py:68 - create_records() ] - mongodb://192.168.20.84:27017/YandexData
+2017/10/18 13:19:53 - DEBUG -  [main.py:70 - callback() ] - end processing
+2017/10/18 13:24:04 - DEBUG -  [main.py:79 - main() ] -  [*] Waiting for messages. To exit press CTRL+C
+2017/10/18 13:24:29 - DEBUG -  [main.py:34 - callback() ] - b'{"mongoServerName": "mongodb://192.168.20.84:27017", "redisHost": "192.168.20.84", "settings": {"searcher": "https://yandex.ru", "count": 1, "search_q": ["Who are you, Joe Black"]}, "mongoCollectionName": "Snippets", "mongoDataBaseName": "YandexData", "redisPassword": null, "ID": "59e72bdd11309800d6e24d62", "redisPort": 6379}'
+2017/10/18 13:24:29 - DEBUG -  [main.py:37 - callback() ] -  [x] Received task(redisHost='192.168.20.84', settings=task(search_q=['Who are you, Joe Black'], count=1, searcher='https://yandex.ru'), redisPassword=None, redisPort=6379, mongoServerName='mongodb://192.168.20.84:27017', mongoDataBaseName='YandexData', ID='59e72bdd11309800d6e24d62', mongoCollectionName='Snippets') from social
+2017/10/18 13:24:29 - DEBUG -  [main.py:52 - callback() ] - b'2'
+2017/10/18 13:24:29 - DEBUG -  [main.py:56 - callback() ] - task(redisHost='192.168.20.84', settings=task(search_q=['Who are you, Joe Black'], count=1, searcher='https://yandex.ru'), redisPassword=None, redisPort=6379, mongoServerName='mongodb://192.168.20.84:27017', mongoDataBaseName='YandexData', ID='59e72bdd11309800d6e24d62', mongoCollectionName='Snippets')
+2017/10/18 13:24:29 - DEBUG -  [main.py:67 - callback() ] - start processing
+2017/10/18 13:24:29 - DEBUG -  [proccessing.py:54 - create_query() ] - {'text': 'Who are you, Joe Black'}
+2017/10/18 13:24:29 - DEBUG -  [proccessing.py:55 - create_query() ] - urlencode() got an unexpected keyword argument 'quote_via'
+2017/10/18 13:24:29 - DEBUG -  [proccessing.py:64 - create_records() ] - {'ID': '59e72bdd11309800d6e24d62'}
+2017/10/18 13:24:29 - DEBUG -  [proccessing.py:68 - create_records() ] - mongodb://192.168.20.84:27017/YandexData
+2017/10/18 13:24:29 - DEBUG -  [main.py:70 - callback() ] - end processing
+2017/10/18 13:35:46 - DEBUG -  [main.py:79 - main() ] -  [*] Waiting for messages. To exit press CTRL+C
+2017/10/18 13:36:19 - DEBUG -  [main.py:34 - callback() ] - b'{"ID": "59e72ea311309800dcab9438", "mongoCollectionName": "Snippets", "mongoDataBaseName": "YandexData", "redisPort": 6379, "mongoServerName": "mongodb://192.168.20.84:27017", "redisHost": "192.168.20.84", "settings": {"searcher": "https://yandex.ru", "search_q": ["Who are you, Joe Black"], "count": 1}, "redisPassword": null}'
+2017/10/18 13:36:19 - DEBUG -  [main.py:37 - callback() ] -  [x] Received task(settings=task(search_q=['Who are you, Joe Black'], searcher='https://yandex.ru', count=1), mongoCollectionName='Snippets', mongoServerName='mongodb://192.168.20.84:27017', ID='59e72ea311309800dcab9438', redisPassword=None, redisPort=6379, mongoDataBaseName='YandexData', redisHost='192.168.20.84') from social
+2017/10/18 13:36:19 - DEBUG -  [main.py:52 - callback() ] - b'2'
+2017/10/18 13:36:19 - DEBUG -  [main.py:56 - callback() ] - task(settings=task(search_q=['Who are you, Joe Black'], searcher='https://yandex.ru', count=1), mongoCollectionName='Snippets', mongoServerName='mongodb://192.168.20.84:27017', ID='59e72ea311309800dcab9438', redisPassword=None, redisPort=6379, mongoDataBaseName='YandexData', redisHost='192.168.20.84')
+2017/10/18 13:36:19 - DEBUG -  [main.py:67 - callback() ] - start processing
+2017/10/18 13:36:19 - DEBUG -  [proccessing.py:54 - create_query() ] - {'text': 'Who are you, Joe Black'}
+2017/10/18 13:36:19 - DEBUG -  [proccessing.py:55 - create_query() ] - urlencode() got an unexpected keyword argument 'quote_via'
+2017/10/18 13:36:19 - DEBUG -  [proccessing.py:64 - create_records() ] - {'ID': '59e72ea311309800dcab9438'}
+2017/10/18 13:36:19 - DEBUG -  [proccessing.py:68 - create_records() ] - mongodb://192.168.20.84:27017/YandexData
+2017/10/18 13:36:19 - DEBUG -  [main.py:70 - callback() ] - end processing
+2017/10/18 13:47:55 - DEBUG -  [main.py:79 - main() ] -  [*] Waiting for messages. To exit press CTRL+C
+2017/10/18 13:53:12 - DEBUG -  [main.py:79 - main() ] -  [*] Waiting for messages. To exit press CTRL+C
+2017/10/18 13:53:49 - DEBUG -  [main.py:34 - callback() ] - b'{"settings": {"count": 1, "search_q": ["Who are you, Joe Black"], "searcher": "https://yandex.ru"}, "mongoCollectionName": "Snippets", "redisPort": 6379, "redisPassword": null, "mongoDataBaseName": "YandexData", "ID": "59e732bd11309800e227215d", "redisHost": "192.168.20.84", "mongoServerName": "mongodb://192.168.20.84:27017"}'
+2017/10/18 13:53:49 - DEBUG -  [main.py:37 - callback() ] -  [x] Received task(mongoServerName='mongodb://192.168.20.84:27017', redisPort=6379, settings=task(searcher='https://yandex.ru', count=1, search_q=['Who are you, Joe Black']), mongoCollectionName='Snippets', ID='59e732bd11309800e227215d', mongoDataBaseName='YandexData', redisHost='192.168.20.84', redisPassword=None) from social
+2017/10/18 13:53:49 - DEBUG -  [main.py:52 - callback() ] - b'2'
+2017/10/18 13:53:49 - DEBUG -  [main.py:56 - callback() ] - task(mongoServerName='mongodb://192.168.20.84:27017', redisPort=6379, settings=task(searcher='https://yandex.ru', count=1, search_q=['Who are you, Joe Black']), mongoCollectionName='Snippets', ID='59e732bd11309800e227215d', mongoDataBaseName='YandexData', redisHost='192.168.20.84', redisPassword=None)
+2017/10/18 13:53:49 - DEBUG -  [main.py:67 - callback() ] - start processing
+2017/10/18 13:53:49 - DEBUG -  [proccessing.py:92 - get_query() ] - {'text': 'Who are you, Joe Black'}
+2017/10/18 13:53:49 - DEBUG -  [proccessing.py:107 - get_query() ] - sp
+2017/10/18 13:53:49 - ERROR -  [spider.py:31 - load() ] - 'module' object has no attribute 'give_proxy'
+2017/10/18 13:53:49 - ERROR -  [proccessing.py:110 - get_query() ] - Can't load page search/?text=Who+are+you%2C+Joe+Black 
+2017/10/18 13:53:49 - DEBUG -  [proccessing.py:54 - create_query() ] - {'text': 'Who are you, Joe Black'}
+2017/10/18 13:53:49 - DEBUG -  [proccessing.py:55 - create_query() ] - 'module' object has no attribute 'give_proxy'
+2017/10/18 13:53:49 - DEBUG -  [proccessing.py:64 - create_records() ] - {'ID': '59e732bd11309800e227215d'}
+2017/10/18 13:53:49 - DEBUG -  [proccessing.py:68 - create_records() ] - mongodb://192.168.20.84:27017/YandexData
+2017/10/18 13:53:49 - DEBUG -  [main.py:70 - callback() ] - end processing
+2017/10/18 13:57:47 - DEBUG -  [main.py:79 - main() ] -  [*] Waiting for messages. To exit press CTRL+C
+2017/10/18 13:58:05 - DEBUG -  [main.py:34 - callback() ] - b'{"settings": {"search_q": ["Who are you, Joe Black"], "count": 1, "searcher": "https://yandex.ru"}, "mongoCollectionName": "Snippets", "mongoServerName": "mongodb://192.168.20.84:27017", "redisHost": "192.168.20.84", "redisPassword": null, "ID": "59e733bd11309800e8dc574c", "mongoDataBaseName": "YandexData", "redisPort": 6379}'
+2017/10/18 13:58:05 - DEBUG -  [main.py:37 - callback() ] -  [x] Received task(redisPassword=None, ID='59e733bd11309800e8dc574c', mongoServerName='mongodb://192.168.20.84:27017', redisPort=6379, mongoCollectionName='Snippets', mongoDataBaseName='YandexData', redisHost='192.168.20.84', settings=task(search_q=['Who are you, Joe Black'], count=1, searcher='https://yandex.ru')) from social
+2017/10/18 13:58:05 - DEBUG -  [main.py:52 - callback() ] - b'2'
+2017/10/18 13:58:05 - DEBUG -  [main.py:56 - callback() ] - task(redisPassword=None, ID='59e733bd11309800e8dc574c', mongoServerName='mongodb://192.168.20.84:27017', redisPort=6379, mongoCollectionName='Snippets', mongoDataBaseName='YandexData', redisHost='192.168.20.84', settings=task(search_q=['Who are you, Joe Black'], count=1, searcher='https://yandex.ru'))
+2017/10/18 13:58:05 - DEBUG -  [main.py:67 - callback() ] - start processing
+2017/10/18 13:58:05 - DEBUG -  [proccessing.py:92 - get_query() ] - {'text': 'Who are you, Joe Black'}
+2017/10/18 13:58:05 - DEBUG -  [proccessing.py:107 - get_query() ] - sp
+2017/10/18 13:58:05 - ERROR -  [spider.py:31 - load() ] - 'module' object has no attribute 'get_proxy'
+2017/10/18 13:58:05 - ERROR -  [proccessing.py:110 - get_query() ] - Can't load page search/?text=Who+are+you%2C+Joe+Black 
+2017/10/18 13:58:05 - DEBUG -  [proccessing.py:54 - create_query() ] - {'text': 'Who are you, Joe Black'}
+2017/10/18 13:58:05 - DEBUG -  [proccessing.py:55 - create_query() ] - 'module' object has no attribute 'get_proxy'
+2017/10/18 13:58:05 - DEBUG -  [proccessing.py:64 - create_records() ] - {'ID': '59e733bd11309800e8dc574c'}
+2017/10/18 13:58:05 - DEBUG -  [proccessing.py:68 - create_records() ] - mongodb://192.168.20.84:27017/YandexData
+2017/10/18 13:58:05 - DEBUG -  [main.py:70 - callback() ] - end processing
+2017/10/18 14:03:34 - DEBUG -  [main.py:79 - main() ] -  [*] Waiting for messages. To exit press CTRL+C
+2017/10/18 14:03:58 - DEBUG -  [main.py:34 - callback() ] - b'{"mongoServerName": "mongodb://192.168.20.84:27017", "settings": {"searcher": "https://yandex.ru", "search_q": ["Who are you, Joe Black"], "count": 1}, "redisPassword": null, "mongoDataBaseName": "YandexData", "ID": "59e7351e11309800ee1d5b74", "redisHost": "192.168.20.84", "mongoCollectionName": "Snippets", "redisPort": 6379}'
+2017/10/18 14:03:58 - DEBUG -  [main.py:37 - callback() ] -  [x] Received task(redisHost='192.168.20.84', redisPort=6379, mongoDataBaseName='YandexData', settings=task(search_q=['Who are you, Joe Black'], searcher='https://yandex.ru', count=1), redisPassword=None, mongoCollectionName='Snippets', ID='59e7351e11309800ee1d5b74', mongoServerName='mongodb://192.168.20.84:27017') from social
+2017/10/18 14:03:58 - DEBUG -  [main.py:52 - callback() ] - b'2'
+2017/10/18 14:03:58 - DEBUG -  [main.py:56 - callback() ] - task(redisHost='192.168.20.84', redisPort=6379, mongoDataBaseName='YandexData', settings=task(search_q=['Who are you, Joe Black'], searcher='https://yandex.ru', count=1), redisPassword=None, mongoCollectionName='Snippets', ID='59e7351e11309800ee1d5b74', mongoServerName='mongodb://192.168.20.84:27017')
+2017/10/18 14:03:58 - DEBUG -  [main.py:67 - callback() ] - start processing
+2017/10/18 14:03:58 - DEBUG -  [proccessing.py:92 - get_query() ] - {'text': 'Who are you, Joe Black'}
+2017/10/18 14:03:58 - DEBUG -  [proccessing.py:107 - get_query() ] - sp
+2017/10/18 14:04:02 - ERROR -  [spider.py:31 - load() ] - 'ProxyManager' object has no attribute '_logger'
+2017/10/18 14:04:02 - ERROR -  [proccessing.py:110 - get_query() ] - Can't load page search/?text=Who+are+you%2C+Joe+Black 
+2017/10/18 14:04:02 - DEBUG -  [proccessing.py:54 - create_query() ] - {'text': 'Who are you, Joe Black'}
+2017/10/18 14:04:02 - DEBUG -  [proccessing.py:55 - create_query() ] - 'ProxyManager' object has no attribute '_logger'
+2017/10/18 14:04:02 - DEBUG -  [proccessing.py:64 - create_records() ] - {'ID': '59e7351e11309800ee1d5b74'}
+2017/10/18 14:04:02 - DEBUG -  [proccessing.py:68 - create_records() ] - mongodb://192.168.20.84:27017/YandexData
+2017/10/18 14:04:02 - DEBUG -  [main.py:70 - callback() ] - end processing
+2017/10/18 14:07:09 - DEBUG -  [main.py:79 - main() ] -  [*] Waiting for messages. To exit press CTRL+C
+2017/10/18 14:07:47 - DEBUG -  [main.py:34 - callback() ] - b'{"settings": {"searcher": "https://yandex.ru", "search_q": ["Who are you, Joe Black"], "count": 1}, "mongoServerName": "mongodb://192.168.20.84:27017", "redisPort": 6379, "redisHost": "192.168.20.84", "redisPassword": null, "mongoDataBaseName": "YandexData", "ID": "59e7360311309800f4fb671f", "mongoCollectionName": "Snippets"}'
+2017/10/18 14:07:47 - DEBUG -  [main.py:37 - callback() ] -  [x] Received task(redisPassword=None, ID='59e7360311309800f4fb671f', redisPort=6379, mongoCollectionName='Snippets', mongoServerName='mongodb://192.168.20.84:27017', redisHost='192.168.20.84', mongoDataBaseName='YandexData', settings=task(search_q=['Who are you, Joe Black'], searcher='https://yandex.ru', count=1)) from social
+2017/10/18 14:07:47 - DEBUG -  [main.py:52 - callback() ] - b'2'
+2017/10/18 14:07:47 - DEBUG -  [main.py:56 - callback() ] - task(redisPassword=None, ID='59e7360311309800f4fb671f', redisPort=6379, mongoCollectionName='Snippets', mongoServerName='mongodb://192.168.20.84:27017', redisHost='192.168.20.84', mongoDataBaseName='YandexData', settings=task(search_q=['Who are you, Joe Black'], searcher='https://yandex.ru', count=1))
+2017/10/18 14:07:47 - DEBUG -  [main.py:67 - callback() ] - start processing
+2017/10/18 14:07:47 - DEBUG -  [proccessing.py:92 - get_query() ] - {'text': 'Who are you, Joe Black'}
+2017/10/18 14:07:47 - DEBUG -  [proccessing.py:107 - get_query() ] - sp
+2017/10/18 14:07:50 - DEBUG -  [pproxy.py:93 - check_proxy() ] - cssselect does not seem to be installed. See http://packages.python.org/cssselect/
+2017/10/18 14:07:51 - DEBUG -  [pproxy.py:93 - check_proxy() ] - ("bad handshake: Error([('SSL routines', 'ssl3_get_server_certificate', 'certificate verify failed')],)",)
+2017/10/18 14:07:55 - DEBUG -  [pproxy.py:93 - check_proxy() ] - cssselect does not seem to be installed. See http://packages.python.org/cssselect/
+2017/10/18 14:07:56 - DEBUG -  [pproxy.py:93 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 403 Forbidden',)))
+2017/10/18 14:08:06 - DEBUG -  [pproxy.py:93 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fd5949b3ac8>, 'Connection to 212.200.126.14 timed out. (connect timeout=10)'))
+2017/10/18 14:08:07 - DEBUG -  [pproxy.py:93 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(104, 'Connection reset by peer')))
+2017/10/18 14:08:17 - DEBUG -  [pproxy.py:93 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fd59504d828>, 'Connection to 46.16.226.10 timed out. (connect timeout=10)'))
+2017/10/18 14:08:27 - DEBUG -  [pproxy.py:93 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fd59504d978>, 'Connection to 190.121.158.114 timed out. (connect timeout=10)'))
+2017/10/18 14:08:28 - DEBUG -  [pproxy.py:93 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 403 Forbidden',)))
+2017/10/18 14:08:29 - DEBUG -  [pproxy.py:93 - check_proxy() ] - cssselect does not seem to be installed. See http://packages.python.org/cssselect/
+2017/10/18 14:08:29 - DEBUG -  [pproxy.py:93 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fd59504d1d0>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+2017/10/18 14:08:29 - DEBUG -  [pproxy.py:93 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fd5949b3c88>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+2017/10/18 14:08:29 - DEBUG -  [pproxy.py:93 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fd5949cf128>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+2017/10/18 14:08:39 - DEBUG -  [pproxy.py:93 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fd5949cf860>, 'Connection to 66.162.122.25 timed out. (connect timeout=10)'))
+2017/10/18 14:08:40 - DEBUG -  [pproxy.py:93 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 403 Forbidden',)))
+2017/10/18 14:08:40 - DEBUG -  [pproxy.py:63 - get_proxy() ] - None
+2017/10/18 14:08:40 - ERROR -  [connect.py:42 - create() ] - Can't create proxy
+2017/10/18 14:08:40 - DEBUG -  [proccessing.py:92 - get_query() ] - {'text': 'Who are you, Joe Black'}
+2017/10/18 14:08:40 - DEBUG -  [proccessing.py:107 - get_query() ] - sp
+2017/10/18 14:08:51 - DEBUG -  [pproxy.py:93 - check_proxy() ] - cssselect does not seem to be installed. See http://packages.python.org/cssselect/
+2017/10/18 14:08:52 - DEBUG -  [pproxy.py:93 - check_proxy() ] - ("bad handshake: Error([('SSL routines', 'ssl3_get_server_certificate', 'certificate verify failed')],)",)
+2017/10/18 14:09:02 - DEBUG -  [pproxy.py:93 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fd59504d5f8>, 'Connection to 149.5.38.137 timed out. (connect timeout=10)'))
+2017/10/18 14:09:03 - DEBUG -  [pproxy.py:93 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 403 Forbidden',)))
+2017/10/18 14:09:38 - DEBUG -  [main.py:79 - main() ] -  [*] Waiting for messages. To exit press CTRL+C
+2017/10/18 14:09:49 - DEBUG -  [main.py:34 - callback() ] - b'{"ID": "59e7367d11309800fa6fb171", "redisPort": 6379, "settings": {"searcher": "https://yandex.ru", "search_q": ["Who are you, Joe Black"], "count": 1}, "redisPassword": null, "redisHost": "192.168.20.84", "mongoCollectionName": "Snippets", "mongoServerName": "mongodb://192.168.20.84:27017", "mongoDataBaseName": "YandexData"}'
+2017/10/18 14:09:49 - DEBUG -  [main.py:37 - callback() ] -  [x] Received task(redisHost='192.168.20.84', ID='59e7367d11309800fa6fb171', redisPort=6379, settings=task(search_q=['Who are you, Joe Black'], searcher='https://yandex.ru', count=1), redisPassword=None, mongoServerName='mongodb://192.168.20.84:27017', mongoCollectionName='Snippets', mongoDataBaseName='YandexData') from social
+2017/10/18 14:09:49 - DEBUG -  [main.py:52 - callback() ] - b'2'
+2017/10/18 14:09:49 - DEBUG -  [main.py:56 - callback() ] - task(redisHost='192.168.20.84', ID='59e7367d11309800fa6fb171', redisPort=6379, settings=task(search_q=['Who are you, Joe Black'], searcher='https://yandex.ru', count=1), redisPassword=None, mongoServerName='mongodb://192.168.20.84:27017', mongoCollectionName='Snippets', mongoDataBaseName='YandexData')
+2017/10/18 14:09:49 - DEBUG -  [main.py:67 - callback() ] - start processing
+2017/10/18 14:09:49 - DEBUG -  [proccessing.py:92 - get_query() ] - {'text': 'Who are you, Joe Black'}
+2017/10/18 14:09:49 - DEBUG -  [proccessing.py:107 - get_query() ] - sp
+2017/10/18 14:09:57 - DEBUG -  [pproxy.py:93 - check_proxy() ] - ("bad handshake: Error([('SSL routines', 'ssl3_get_server_certificate', 'certificate verify failed')],)",)
+2017/10/18 14:10:07 - DEBUG -  [pproxy.py:93 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fb35dc9ab38>, 'Connection to 149.5.38.137 timed out. (connect timeout=10)'))
+2017/10/18 14:10:07 - DEBUG -  [pproxy.py:93 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 403 Forbidden',)))
+2017/10/18 14:44:17 - DEBUG -  [__init__.py:17 - <module>() ] - version=0.2.3
+2017/10/18 14:44:17 - DEBUG -  [__init__.py:10 - <module>() ] - version=0.2.1
+2017/10/18 14:44:17 - DEBUG -  [main.py:79 - main() ] -  [*] Waiting for messages. To exit press CTRL+C
+2017/10/18 14:44:38 - DEBUG -  [main.py:34 - callback() ] - b'{"settings": {"searcher": "https://yandex.ru", "count": 1, "search_q": ["Who are you, Joe Black"]}, "redisPassword": null, "mongoServerName": "mongodb://192.168.20.84:27017", "redisHost": "192.168.20.84", "ID": "59e73ea61130980100d0057e", "redisPort": 6379, "mongoCollectionName": "Snippets", "mongoDataBaseName": "YandexData"}'
+2017/10/18 14:44:38 - DEBUG -  [main.py:37 - callback() ] -  [x] Received task(settings=task(search_q=['Who are you, Joe Black'], count=1, searcher='https://yandex.ru'), mongoServerName='mongodb://192.168.20.84:27017', mongoCollectionName='Snippets', redisPassword=None, mongoDataBaseName='YandexData', redisPort=6379, redisHost='192.168.20.84', ID='59e73ea61130980100d0057e') from social
+2017/10/18 14:44:38 - DEBUG -  [main.py:52 - callback() ] - b'2'
+2017/10/18 14:44:38 - DEBUG -  [main.py:56 - callback() ] - task(settings=task(search_q=['Who are you, Joe Black'], count=1, searcher='https://yandex.ru'), mongoServerName='mongodb://192.168.20.84:27017', mongoCollectionName='Snippets', redisPassword=None, mongoDataBaseName='YandexData', redisPort=6379, redisHost='192.168.20.84', ID='59e73ea61130980100d0057e')
+2017/10/18 14:44:38 - DEBUG -  [main.py:67 - callback() ] - start processing
+2017/10/18 14:44:38 - DEBUG -  [proccessing.py:92 - get_query() ] - {'text': 'Who are you, Joe Black'}
+2017/10/18 14:44:38 - DEBUG -  [proccessing.py:107 - get_query() ] - sp
+2017/10/18 14:44:38 - DEBUG -  [pproxy.py:33 - __init__() ] - init
+2017/10/18 14:44:38 - DEBUG -  [pproxy.py:52 - __init__() ] - proxy list
+2017/10/18 14:44:38 - DEBUG -  [pproxy.py:55 - __init__() ] - ['31.25.141.148:8080', '198.108.245.243:8080', '149.5.38.137:8080', '72.52.96.31:80', '212.200.126.14:8080', '125.253.32.158:3128', '46.16.226.10:8080', '190.121.158.114:8080', '72.52.96.31:443', '94.181.34.64:8080', '195.138.86.112:3128', '46.218.85.101:3129', '78.187.73.210:8080', '66.162.122.25:8080', '177.43.72.251:3128']
+2017/10/18 14:44:38 - DEBUG -  [pproxy.py:57 - __init__() ] - 31.25.141.148:8080
+2017/10/18 14:44:41 - DEBUG -  [pproxy.py:57 - __init__() ] - 198.108.245.243:8080
+2017/10/18 14:44:43 - DEBUG -  [pproxy.py:107 - check_proxy() ] - ("bad handshake: Error([('SSL routines', 'ssl3_get_server_certificate', 'certificate verify failed')],)",)
+2017/10/18 14:44:43 - DEBUG -  [pproxy.py:57 - __init__() ] - 149.5.38.137:8080
+2017/10/18 14:44:43 - DEBUG -  [pproxy.py:57 - __init__() ] - 72.52.96.31:80
+2017/10/18 14:44:44 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 403 Forbidden',)))
+2017/10/18 14:44:44 - DEBUG -  [pproxy.py:57 - __init__() ] - 212.200.126.14:8080
+2017/10/18 14:44:57 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+2017/10/18 14:44:57 - DEBUG -  [pproxy.py:57 - __init__() ] - 125.253.32.158:3128
+2017/10/18 14:45:07 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc842c1c198>, 'Connection to 125.253.32.158 timed out. (connect timeout=10)'))
+2017/10/18 14:45:07 - DEBUG -  [pproxy.py:57 - __init__() ] - 46.16.226.10:8080
+2017/10/18 14:45:17 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc843272a58>, 'Connection to 46.16.226.10 timed out. (connect timeout=10)'))
+2017/10/18 14:45:17 - DEBUG -  [pproxy.py:57 - __init__() ] - 190.121.158.114:8080
+2017/10/18 14:45:27 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc8432725c0>, 'Connection to 190.121.158.114 timed out. (connect timeout=10)'))
+2017/10/18 14:45:27 - DEBUG -  [pproxy.py:57 - __init__() ] - 72.52.96.31:443
+2017/10/18 14:45:28 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 403 Forbidden',)))
+2017/10/18 14:45:28 - DEBUG -  [pproxy.py:57 - __init__() ] - 94.181.34.64:8080
+2017/10/18 14:45:38 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc842c1c588>, 'Connection to 94.181.34.64 timed out. (connect timeout=10)'))
+2017/10/18 14:45:38 - DEBUG -  [pproxy.py:57 - __init__() ] - 195.138.86.112:3128
+2017/10/18 14:45:38 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc842c1cb38>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+2017/10/18 14:45:38 - DEBUG -  [pproxy.py:57 - __init__() ] - 46.218.85.101:3129
+2017/10/18 14:45:48 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+2017/10/18 14:45:48 - DEBUG -  [pproxy.py:57 - __init__() ] - 78.187.73.210:8080
+2017/10/18 14:45:48 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc842c1add8>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+2017/10/18 14:45:48 - DEBUG -  [pproxy.py:57 - __init__() ] - 66.162.122.25:8080
+2017/10/18 14:45:58 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc842c1ce10>, 'Connection to 66.162.122.25 timed out. (connect timeout=10)'))
+2017/10/18 14:45:58 - DEBUG -  [pproxy.py:57 - __init__() ] - 177.43.72.251:3128
+2017/10/18 14:45:59 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 403 Forbidden',)))
+2017/10/18 14:45:59 - DEBUG -  [pproxy.py:69 - get_proxy() ] - start
+2017/10/18 14:45:59 - DEBUG -  [pproxy.py:77 - get_proxy() ] - None
+2017/10/18 14:45:59 - ERROR -  [connect.py:42 - create() ] - Can't create proxy
+2017/10/18 14:45:59 - DEBUG -  [proccessing.py:92 - get_query() ] - {'text': 'Who are you, Joe Black'}
+2017/10/18 14:45:59 - DEBUG -  [proccessing.py:107 - get_query() ] - sp
+2017/10/18 14:45:59 - DEBUG -  [pproxy.py:33 - __init__() ] - init
+2017/10/18 14:45:59 - DEBUG -  [pproxy.py:52 - __init__() ] - proxy list
+2017/10/18 14:45:59 - DEBUG -  [pproxy.py:55 - __init__() ] - ['31.25.141.148:8080', '198.108.245.243:8080', '149.5.38.137:8080', '72.52.96.31:80', '212.200.126.14:8080', '125.253.32.158:3128', '46.16.226.10:8080', '190.121.158.114:8080', '72.52.96.31:443', '94.181.34.64:8080', '195.138.86.112:3128', '46.218.85.101:3129', '78.187.73.210:8080', '66.162.122.25:8080', '177.43.72.251:3128']
+2017/10/18 14:45:59 - DEBUG -  [pproxy.py:57 - __init__() ] - 31.25.141.148:8080
+2017/10/18 14:46:06 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(104, 'Connection reset by peer')))
+2017/10/18 14:46:06 - DEBUG -  [pproxy.py:57 - __init__() ] - 198.108.245.243:8080
+2017/10/18 14:46:07 - DEBUG -  [pproxy.py:107 - check_proxy() ] - ("bad handshake: Error([('SSL routines', 'ssl3_get_server_certificate', 'certificate verify failed')],)",)
+2017/10/18 14:46:07 - DEBUG -  [pproxy.py:57 - __init__() ] - 149.5.38.137:8080
+2017/10/18 14:46:08 - DEBUG -  [pproxy.py:57 - __init__() ] - 72.52.96.31:80
+2017/10/18 14:46:08 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 403 Forbidden',)))
+2017/10/18 14:46:08 - DEBUG -  [pproxy.py:57 - __init__() ] - 212.200.126.14:8080
+2017/10/18 14:46:18 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc8432729e8>, 'Connection to 212.200.126.14 timed out. (connect timeout=10)'))
+2017/10/18 14:46:18 - DEBUG -  [pproxy.py:57 - __init__() ] - 125.253.32.158:3128
+2017/10/18 14:46:30 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+2017/10/18 14:46:30 - DEBUG -  [pproxy.py:57 - __init__() ] - 46.16.226.10:8080
+2017/10/18 14:46:40 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+2017/10/18 14:46:40 - DEBUG -  [pproxy.py:57 - __init__() ] - 190.121.158.114:8080
+2017/10/18 14:46:53 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+2017/10/18 14:46:53 - DEBUG -  [pproxy.py:57 - __init__() ] - 72.52.96.31:443
+2017/10/18 14:46:54 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 403 Forbidden',)))
+2017/10/18 14:46:54 - DEBUG -  [pproxy.py:57 - __init__() ] - 94.181.34.64:8080
+2017/10/18 14:47:04 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc842c1a470>, 'Connection to 94.181.34.64 timed out. (connect timeout=10)'))
+2017/10/18 14:47:04 - DEBUG -  [pproxy.py:57 - __init__() ] - 195.138.86.112:3128
+2017/10/18 14:47:04 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc843272208>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+2017/10/18 14:47:04 - DEBUG -  [pproxy.py:57 - __init__() ] - 46.218.85.101:3129
+2017/10/18 14:47:14 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+2017/10/18 14:47:14 - DEBUG -  [pproxy.py:57 - __init__() ] - 78.187.73.210:8080
+2017/10/18 14:47:14 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc842c1c5f8>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+2017/10/18 14:47:14 - DEBUG -  [pproxy.py:57 - __init__() ] - 66.162.122.25:8080
+2017/10/18 14:47:24 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc842c1a048>, 'Connection to 66.162.122.25 timed out. (connect timeout=10)'))
+2017/10/18 14:47:24 - DEBUG -  [pproxy.py:57 - __init__() ] - 177.43.72.251:3128
+2017/10/18 14:47:25 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 403 Forbidden',)))
+2017/10/18 14:47:25 - DEBUG -  [pproxy.py:69 - get_proxy() ] - start
+2017/10/18 14:47:25 - DEBUG -  [pproxy.py:77 - get_proxy() ] - None
+2017/10/18 14:47:25 - ERROR -  [connect.py:42 - create() ] - Can't create proxy
+2017/10/18 14:47:25 - DEBUG -  [proccessing.py:92 - get_query() ] - {'text': 'Who are you, Joe Black'}
+2017/10/18 14:47:25 - DEBUG -  [proccessing.py:107 - get_query() ] - sp
+2017/10/18 14:47:25 - DEBUG -  [pproxy.py:33 - __init__() ] - init
+2017/10/18 14:47:25 - DEBUG -  [pproxy.py:52 - __init__() ] - proxy list
+2017/10/18 14:47:25 - DEBUG -  [pproxy.py:55 - __init__() ] - ['31.25.141.148:8080', '198.108.245.243:8080', '149.5.38.137:8080', '72.52.96.31:80', '212.200.126.14:8080', '125.253.32.158:3128', '46.16.226.10:8080', '190.121.158.114:8080', '72.52.96.31:443', '94.181.34.64:8080', '195.138.86.112:3128', '46.218.85.101:3129', '78.187.73.210:8080', '66.162.122.25:8080', '177.43.72.251:3128']
+2017/10/18 14:47:25 - DEBUG -  [pproxy.py:57 - __init__() ] - 31.25.141.148:8080
+2017/10/18 14:47:41 - DEBUG -  [pproxy.py:107 - check_proxy() ] - ('Connection aborted.', BadStatusLine("''",))
+2017/10/18 14:47:41 - DEBUG -  [pproxy.py:57 - __init__() ] - 198.108.245.243:8080
+2017/10/18 14:47:42 - DEBUG -  [pproxy.py:107 - check_proxy() ] - ("bad handshake: Error([('SSL routines', 'ssl3_get_server_certificate', 'certificate verify failed')],)",)
+2017/10/18 14:47:42 - DEBUG -  [pproxy.py:57 - __init__() ] - 149.5.38.137:8080
+2017/10/18 14:47:43 - DEBUG -  [pproxy.py:57 - __init__() ] - 72.52.96.31:80
+2017/10/18 14:47:43 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 403 Forbidden',)))
+2017/10/18 14:47:43 - DEBUG -  [pproxy.py:57 - __init__() ] - 212.200.126.14:8080
+2017/10/18 14:47:53 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc842c1ab38>, 'Connection to 212.200.126.14 timed out. (connect timeout=10)'))
+2017/10/18 14:47:53 - DEBUG -  [pproxy.py:57 - __init__() ] - 125.253.32.158:3128
+2017/10/18 14:48:03 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc842ba94e0>, 'Connection to 125.253.32.158 timed out. (connect timeout=10)'))
+2017/10/18 14:48:03 - DEBUG -  [pproxy.py:57 - __init__() ] - 46.16.226.10:8080
+2017/10/18 14:48:13 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc842ba9f98>, 'Connection to 46.16.226.10 timed out. (connect timeout=10)'))
+2017/10/18 14:48:13 - DEBUG -  [pproxy.py:57 - __init__() ] - 190.121.158.114:8080
+2017/10/18 14:48:23 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc842c1a630>, 'Connection to 190.121.158.114 timed out. (connect timeout=10)'))
+2017/10/18 14:48:23 - DEBUG -  [pproxy.py:57 - __init__() ] - 72.52.96.31:443
+2017/10/18 14:48:24 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 403 Forbidden',)))
+2017/10/18 14:48:24 - DEBUG -  [pproxy.py:57 - __init__() ] - 94.181.34.64:8080
+2017/10/18 14:48:34 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc84328fba8>, 'Connection to 94.181.34.64 timed out. (connect timeout=10)'))
+2017/10/18 14:48:34 - DEBUG -  [pproxy.py:57 - __init__() ] - 195.138.86.112:3128
+2017/10/18 14:48:34 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc842c1cb70>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+2017/10/18 14:48:34 - DEBUG -  [pproxy.py:57 - __init__() ] - 46.218.85.101:3129
+2017/10/18 14:48:44 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+2017/10/18 14:48:44 - DEBUG -  [pproxy.py:57 - __init__() ] - 78.187.73.210:8080
+2017/10/18 14:48:44 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc842ba9160>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+2017/10/18 14:48:44 - DEBUG -  [pproxy.py:57 - __init__() ] - 66.162.122.25:8080
+2017/10/18 14:48:54 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc842c1c048>, 'Connection to 66.162.122.25 timed out. (connect timeout=10)'))
+2017/10/18 14:48:54 - DEBUG -  [pproxy.py:57 - __init__() ] - 177.43.72.251:3128
+2017/10/18 14:48:55 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 403 Forbidden',)))
+2017/10/18 14:48:55 - DEBUG -  [pproxy.py:69 - get_proxy() ] - start
+2017/10/18 14:48:55 - DEBUG -  [pproxy.py:77 - get_proxy() ] - None
+2017/10/18 14:48:55 - ERROR -  [connect.py:42 - create() ] - Can't create proxy
+2017/10/18 14:48:55 - DEBUG -  [proccessing.py:92 - get_query() ] - {'text': 'Who are you, Joe Black'}
+2017/10/18 14:48:55 - DEBUG -  [proccessing.py:107 - get_query() ] - sp
+2017/10/18 14:48:55 - DEBUG -  [pproxy.py:33 - __init__() ] - init
+2017/10/18 14:48:55 - DEBUG -  [pproxy.py:52 - __init__() ] - proxy list
+2017/10/18 14:48:55 - DEBUG -  [pproxy.py:55 - __init__() ] - ['31.25.141.148:8080', '198.108.245.243:8080', '149.5.38.137:8080', '72.52.96.31:80', '212.200.126.14:8080', '125.253.32.158:3128', '46.16.226.10:8080', '190.121.158.114:8080', '72.52.96.31:443', '94.181.34.64:8080', '195.138.86.112:3128', '46.218.85.101:3129', '78.187.73.210:8080', '66.162.122.25:8080', '177.43.72.251:3128']
+2017/10/18 14:48:55 - DEBUG -  [pproxy.py:57 - __init__() ] - 31.25.141.148:8080
+2017/10/18 14:49:03 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(104, 'Connection reset by peer')))
+2017/10/18 14:49:03 - DEBUG -  [pproxy.py:57 - __init__() ] - 198.108.245.243:8080
+2017/10/18 14:49:04 - DEBUG -  [pproxy.py:107 - check_proxy() ] - ("bad handshake: Error([('SSL routines', 'ssl3_get_server_certificate', 'certificate verify failed')],)",)
+2017/10/18 14:49:04 - DEBUG -  [pproxy.py:57 - __init__() ] - 149.5.38.137:8080
+2017/10/18 14:49:05 - DEBUG -  [pproxy.py:57 - __init__() ] - 72.52.96.31:80
+2017/10/18 14:49:05 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 403 Forbidden',)))
+2017/10/18 14:49:05 - DEBUG -  [pproxy.py:57 - __init__() ] - 212.200.126.14:8080
+2017/10/18 14:49:15 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc843272588>, 'Connection to 212.200.126.14 timed out. (connect timeout=10)'))
+2017/10/18 14:49:15 - DEBUG -  [pproxy.py:57 - __init__() ] - 125.253.32.158:3128
+2017/10/18 14:49:20 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(104, 'Connection reset by peer')))
+2017/10/18 14:49:20 - DEBUG -  [pproxy.py:57 - __init__() ] - 46.16.226.10:8080
+2017/10/18 14:49:30 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7fc842bb0cf8>, 'Connection to 46.16.226.10 timed out. (connect timeout=10)'))
+2017/10/18 14:49:30 - DEBUG -  [pproxy.py:57 - __init__() ] - 190.121.158.114:8080

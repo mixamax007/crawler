@@ -1,0 +1,52 @@
+name: test
+channels:
+- defaults
+dependencies:
+- openssl=1.0.2l=0
+- pip=9.0.1=py36_1
+- python=3.6.2=0
+- pyyaml=3.12=py36_0
+- readline=6.2=2
+- setuptools=27.2.0=py36_0
+- sqlite=3.13.0=0
+- tk=8.5.18=0
+- wheel=0.29.0=py36_0
+- xz=5.2.2=1
+- yaml=0.1.6=0
+- zlib=1.2.8=3
+- pip:
+  - asn1crypto==0.22.0
+  - beautifulsoup4==4.6.0
+  - cssselect==1.0.1
+  - bs4==0.0.1
+  - certifi==2017.7.27.1
+  - cffi==1.10.0
+  - chardet==3.0.4
+  - docutils==0.14
+  - google-api-python-client==1.6.2
+  - httplib2==0.10.3
+  - idna==2.6
+  - pyvirtualdisplay==0.2.1
+  - lockfile==0.12.2
+  - lxml==3.8.0
+  - mongoengine==0.13.0
+  - oauth2client==4.1.2
+  - packaging==16.8
+  - pika==0.10.0
+  - protobuf==3.4.0
+  - pyasn1==0.3.2
+  - pyasn1-modules==0.0.11
+  - pycparser==2.18
+  - pymongo==3.5.0
+  - pyparsing==2.2.0
+  - python-daemon==2.1.2
+  - redis==2.10.6
+  - requests==2.18.4
+  - rethinkdb==2.3.0.post6
+  - rsa==3.4.2
+  - selenium==3.5.0
+  - six==1.10.0
+  - uritemplate==3.0.0
+  - urllib3==1.22
+prefix: /home/lenovo/miniconda3/envs/test
+

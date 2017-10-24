@@ -1,0 +1,124 @@
+version: '2'
+
+networks:
+  app-tier:
+    driver: bridge
+
+services:
+  flask:
+    build: ./flask
+    container_name: "flask"
+    environment:
+     - FLASK_APP=run.py
+     - LC_ALL=C.UTF-8
+     - LANG=C.UTF-8
+     - HANDLE=test
+     - CONSUL_HOST=consul_1
+    ports:
+     - "5000:5000"
+    stdin_open: true
+    networks:
+      - app-tier
+    volumes:
+     - ./flask/project:/usr/src/app
+     - /etc/localtime:/etc/localtime:ro
+     - /etc/timezone:/etc/timezone:ro
+    tty: true
+    depends_on:
+      - consul_1
+    links:
+      - consul_1
+  parser:
+    build: ./parser
+    container_name: "parser"
+    environment:
+     - LC_ALL=C.UTF-8
+     - LANG=C.UTF-8
+     - HANDLE=test
+     - CONSUL_HOST=consul_1
+    stdin_open: true
+    networks:
+      - app-tier
+    volumes:
+     - ./parser/project:/usr/src/app
+     - /etc/localtime:/etc/localtime:ro
+     - /etc/timezone:/etc/timezone:ro
+    tty: true
+    depends_on:
+      - consul_1
+    links:
+      - consul_1
+  nginx:
+    build: ./nginx
+    ports:
+     - "80:80"
+     - "443:443"
+    stdin_open: true
+    networks:
+      - app-tier
+    volumes:
+     - /etc/localtime:/etc/localtime:ro
+     - /etc/timezone:/etc/timezone:ro
+  rabbitmq:
+    image: 'rabbitmq:latest'
+    container_name: "rabbit-mq"
+    hostname: "rabbit-mq"
+    networks:
+      - app-tier
+    ports:
+      - "25672:25672"
+      - "5672:5672"
+  mongodb:
+    image: 'mongo:latest'
+    container_name: "mongo"
+    hostname: "mongo"
+    networks:
+      - app-tier
+    ports:
+      - "27017:27017"
+  redis:
+    image: 'redis:latest'
+    container_name: "redis"
+    hostname: "redis"
+    networks:
+      - app-tier
+    ports:
+      - "6379:6379"
+  consul_1:
+    image: "consul:latest"
+    container_name: "consul_1"
+    hostname: "consul_1"
+    networks:
+      - app-tier
+    ports:
+#      - "8400:8400"
+      - "8550:8500"
+#      - "8600:53"
+    environment:
+      - CONSUL_OPTS=-bootstrap-expect=3
+  consul_2:
+    image: "consul:latest"
+    hostname: "consul_2"
+    networks:
+      - app-tier
+    ports:
+ #     - "8402:8400"
+      - "8552:8500"
+ #     - "8602:8600"
+    links:
+      - "consul_1"
+    environment:
+      - CONSUL_OPTS=-rejoin -retry-join=consul_1
+  consul_3:
+    image: "consul:latest"
+    hostname: "consul_3"
+    networks:
+      - app-tier
+    ports:
+#     - "8403:8400"
+      - "8553:8500"
+ #     - "8603:8600"
+    links:
+      - "consul_1"
+    environment:
+      - CONSUL_OPTS=-rejoin -retry-join=consul_1

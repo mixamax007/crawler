@@ -1,0 +1,6 @@
+#list of result
+ul: "//ul[@role='main']"
+li: "//li[div/h2 and not(contains(@role,'complementary') and contains(@aria-label,'Реклама'))]"
+title: "//h2/a/text()"
+href: "//h2/a/@href"
+pages: "//div[@role='navigation' and @aria-label='Страницы']/@data-bem"

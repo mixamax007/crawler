@@ -1,0 +1,28 @@
+{
+    "mongo_server_name": "172.17.100.168:27017",
+    "mongo_database_name": "YandexData",
+    "mongo_collection_name": "Posts",
+    "search_q": ["Catalonia's Independence Vote Descends Into Chaos and Clashes"],
+    "download_depth": 96,
+    "use_proxy": true,
+    "region": 666,
+    "pages_count": 69,
+    "crawl_full_pages": true,
+    "run_after": {
+        "rabbit_cred": {
+            "host": "172.17.100.169:5672"
+        },
+        "text_parse_task": {
+            "morphologyEngine": 1,
+            "langDetectEngine": 1
+        }
+    },
+    "app_settings": {
+        "workers_count": 1,
+        "autodelete": false,
+        "log": {
+            "loggers": ["console"],
+            "log_level": "debug"
+        }
+    }
+}

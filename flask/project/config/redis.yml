@@ -1,0 +1,15 @@
+version: 1
+
+test:
+    host: 192.168.20.84
+    port: 6379
+    password: null
+    keys:
+      social: social
+
+production:
+    host: 192.168.20.84
+    port: 6379
+    password: null
+    keys:
+      social: social

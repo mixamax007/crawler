@@ -1,0 +1,34 @@
+2017/10/18 14:41:54 - DEBUG -  [pproxy.py:33 - __init__() ] - init
+2017/10/18 14:41:55 - DEBUG -  [pproxy.py:52 - __init__() ] - proxy list
+2017/10/18 14:41:55 - DEBUG -  [pproxy.py:55 - __init__() ] - ['31.25.141.148:8080', '198.108.245.243:8080', '149.5.38.137:8080', '72.52.96.31:80', '212.200.126.14:8080', '125.253.32.158:3128', '46.16.226.10:8080', '190.121.158.114:8080', '72.52.96.31:443', '94.181.34.64:8080', '195.138.86.112:3128', '46.218.85.101:3129', '78.187.73.210:8080', '66.162.122.25:8080', '177.43.72.251:3128']
+2017/10/18 14:41:55 - DEBUG -  [pproxy.py:57 - __init__() ] - 31.25.141.148:8080
+2017/10/18 14:42:05 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7f1cdb962208>, 'Connection to 31.25.141.148 timed out. (connect timeout=10)'))
+2017/10/18 14:42:05 - DEBUG -  [pproxy.py:57 - __init__() ] - 198.108.245.243:8080
+2017/10/18 14:42:06 - DEBUG -  [pproxy.py:107 - check_proxy() ] - ("bad handshake: Error([('SSL routines', 'ssl3_get_server_certificate', 'certificate verify failed')],)",)
+2017/10/18 14:42:06 - DEBUG -  [pproxy.py:57 - __init__() ] - 149.5.38.137:8080
+2017/10/18 14:42:16 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7f1cdb962b70>, 'Connection to 149.5.38.137 timed out. (connect timeout=10)'))
+2017/10/18 14:42:16 - DEBUG -  [pproxy.py:57 - __init__() ] - 72.52.96.31:80
+2017/10/18 14:42:16 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 403 Forbidden',)))
+2017/10/18 14:42:16 - DEBUG -  [pproxy.py:57 - __init__() ] - 212.200.126.14:8080
+2017/10/18 14:42:27 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+2017/10/18 14:42:27 - DEBUG -  [pproxy.py:57 - __init__() ] - 125.253.32.158:3128
+2017/10/18 14:42:37 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7f1cdb973550>, 'Connection to 125.253.32.158 timed out. (connect timeout=10)'))
+2017/10/18 14:42:37 - DEBUG -  [pproxy.py:57 - __init__() ] - 46.16.226.10:8080
+2017/10/18 14:42:52 - DEBUG -  [pproxy.py:57 - __init__() ] - 190.121.158.114:8080
+2017/10/18 14:43:02 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7f1cdb946a58>, 'Connection to 190.121.158.114 timed out. (connect timeout=10)'))
+2017/10/18 14:43:02 - DEBUG -  [pproxy.py:57 - __init__() ] - 72.52.96.31:443
+2017/10/18 14:43:03 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 403 Forbidden',)))
+2017/10/18 14:43:03 - DEBUG -  [pproxy.py:57 - __init__() ] - 94.181.34.64:8080
+2017/10/18 14:43:13 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7f1cdb2fb0b8>, 'Connection to 94.181.34.64 timed out. (connect timeout=10)'))
+2017/10/18 14:43:13 - DEBUG -  [pproxy.py:57 - __init__() ] - 195.138.86.112:3128
+2017/10/18 14:43:13 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7f1cdb946dd8>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+2017/10/18 14:43:13 - DEBUG -  [pproxy.py:57 - __init__() ] - 46.218.85.101:3129
+2017/10/18 14:43:23 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', timeout('timed out',)))
+2017/10/18 14:43:23 - DEBUG -  [pproxy.py:57 - __init__() ] - 78.187.73.210:8080
+2017/10/18 14:43:23 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', NewConnectionError('<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7f1cdb962c50>: Failed to establish a new connection: [Errno 111] Connection refused',)))
+2017/10/18 14:43:23 - DEBUG -  [pproxy.py:57 - __init__() ] - 66.162.122.25:8080
+2017/10/18 14:43:33 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ConnectTimeoutError(<requests.packages.urllib3.connection.VerifiedHTTPSConnection object at 0x7f1cdb2fb978>, 'Connection to 66.162.122.25 timed out. (connect timeout=10)'))
+2017/10/18 14:43:33 - DEBUG -  [pproxy.py:57 - __init__() ] - 177.43.72.251:3128
+2017/10/18 14:43:34 - DEBUG -  [pproxy.py:107 - check_proxy() ] - HTTPSConnectionPool(host='yandex.ru', port=443): Max retries exceeded with url: /search/?text=qwerty&lr=213 (Caused by ProxyError('Cannot connect to proxy.', OSError('Tunnel connection failed: 403 Forbidden',)))
+2017/10/18 14:43:34 - DEBUG -  [pproxy.py:69 - get_proxy() ] - start
+2017/10/18 14:43:34 - DEBUG -  [pproxy.py:77 - get_proxy() ] - 46.16.226.10:8080

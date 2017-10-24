@@ -1,0 +1,13 @@
+version: 1
+
+test:
+  sender:
+    host: 192.168.20.84
+    queue:
+      social: social
+
+test:
+  sender:
+    host: 192.168.20.84
+    queue:
+      social: social
